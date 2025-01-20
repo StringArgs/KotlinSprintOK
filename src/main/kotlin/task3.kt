@@ -1,12 +1,10 @@
 package org.example
 
 fun main(){
-    /* Я использовал переменные типа String так как не знаю как проинициализировать
-    * числовую переменную с ведущим нулем.
-     */
     val year = "1961"
-    var hour = "9"
+    var hour = "09"
     var minute = "07"
+
     println(year)
     println(hour)
     println(minute)
