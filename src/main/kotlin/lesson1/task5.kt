@@ -1,4 +1,4 @@
-package org.example
+package org.example.lesson1
 
 fun main(){
     val seconds = 6480
@@ -8,5 +8,4 @@ fun main(){
     val remainSeconds = remainSecondsAfterHours % 60
 
     println("%02d:%02d:%02d".format(hours, minutes, remainSeconds))
-
 }
