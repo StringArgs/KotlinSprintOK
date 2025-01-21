@@ -7,8 +7,8 @@ fun main(){
     val numberOfPermanentEmployees = 50
     val numberOfInterns = 30
     val totalEmployees = numberOfPermanentEmployees + numberOfInterns
-    val permanentEmployeeExpenses = expenses(numberOfPermanentEmployees, permanentEmployeesSalary)
-    val internsExpenses = expenses(numberOfInterns, internsSalary)
+    val permanentEmployeeExpenses = numberOfPermanentEmployees * permanentEmployeesSalary
+    val internsExpenses = numberOfInterns * internsSalary
     val totalExpenses = permanentEmployeeExpenses + internsExpenses
     val salaryArithmeticMean = (permanentEmployeeExpenses + internsExpenses) / totalEmployees
 
@@ -17,6 +17,3 @@ fun main(){
     println(salaryArithmeticMean)
 }
 
-fun expenses(number: Int, salary: Int ): Int{
-    return number * salary
-}
