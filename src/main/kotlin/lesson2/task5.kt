@@ -6,7 +6,10 @@ fun main(){
     val initialDeposit = 70_000
     val depositDuration = 20
     val yearPercentage = 16.7
-    val finalAmount = initialDeposit * ((1 + (yearPercentage/100)).pow(depositDuration))
+    val convertToDecimal = 100
+    val initialAmount = 1
+    val finalAmount = initialDeposit * ((initialAmount + (yearPercentage / convertToDecimal)).pow(depositDuration))
+    // Formula A=P(1+r)^t
 
     println("%.3f".format(finalAmount))
 }
