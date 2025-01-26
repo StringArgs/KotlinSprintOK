@@ -9,7 +9,6 @@ fun main(){
     val convertToDecimal = 100
     val initialAmount = 1
     val finalAmount = initialDeposit * ((initialAmount + (yearPercentage / convertToDecimal)).pow(depositDuration))
-    // Formula A=P(1+r)^t
 
     println("%.3f".format(finalAmount))
 }
